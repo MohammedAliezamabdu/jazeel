@@ -1,68 +1,104 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>منتجات جزيل | تمور وشوكولاتة وصواني ضيافة</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-2f1LzFQZVTNff7kwh28ykVfoCEN0z7LxyzKDn5XxhxL7sRKqGZo4PMBVXsfS5aXoaZySUdkddUTkOcNEPwZV2Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
-	<link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/jazeel.jpg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg"
+          href="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/jazeel.jpg">
+
+    <!-- Main Style -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <div id="header-placeholder"></div>
 
-    <main class="page">
-		<section class="hero" data-animate>
-            <div class="container">
-                <div class="hero-copy">
-                    <h1>منتجات جزيل المختارة</h1>
-                    <p>اخترنا لكم مجموعة متكاملة من التمور والشوكولاتة والصواني المصمّمة بعناية لتناسب ضيافتكم اليومية والمناسبات الخاصة.</p>
-                </div>
-                <div>
-                    <!-- استبدل برابط Google Drive للصورة -->
-                    <img src="https://drive.google.com/uc?export=view&id=YOUR_FILE_ID_HERE" alt="منتجات تمر وشوكولاتة">
-                </div>
-            </div>
-        </section>
+<div id="header-placeholder"></div>
 
-        <!-- Filter Tabs -->
-		<section class="container" style="margin-top: 2rem;" data-animate>
-            <div class="filter-tabs">
-                <button class="filter-tab active" data-category="all">الكل</button>
-                <button class="filter-tab" data-category="dates">التمر</button>
-                <button class="filter-tab" data-category="chocolate">الشوكولاتة</button>
-                <button class="filter-tab" data-category="trays">الصواني</button>
-            </div>
-        </section>
+<main class="page">
 
-        <!-- Products Grid -->
-		<section class="container" style="margin-top: 2rem;" data-animate>
-            <div class="products-grid" id="productsGrid">
-                <!-- Products will be loaded here by JavaScript -->
-            </div>
-        </section>
-    </main>
+    <!-- ===================================================================================== -->
+    <!-- HERO SECTION -->
+    <!-- ===================================================================================== -->
+    <section class="hero" data-animate>
+        <div class="container">
 
-    <!-- Product Modal -->
-    <div class="modal-overlay" id="productModal">
-        <div class="modal-content">
-            <button class="modal-close" id="closeModal">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="modal-body" id="modalBody">
-                <!-- Product details will be loaded here -->
+            <div class="hero-copy">
+                <h1>منتجات جزيل المختارة</h1>
+                <p>
+                    نقدم مجموعة منتقاة بعناية من التمور الفاخرة، الشوكولاتة الراقية، والصواني المصممة للمناسبات،
+                    لتمنح ضيوفك تجربة ضيافة سعودية تفوق التوقعات.
+                </p>
             </div>
+
+            <div class="hero-media">
+                <div class="hero-media-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=1600&q=80"
+                     alt="منتجات التمور والشوكولاتة">
+            </div>
+
         </div>
+    </section>
+
+    <!-- ===================================================================================== -->
+    <!-- FILTER TABS -->
+    <!-- ===================================================================================== -->
+    <section class="container" style="margin-top: 2rem;" data-animate>
+        <div class="filter-tabs">
+            <button class="filter-tab active" data-category="all">الكل</button>
+            <button class="filter-tab" data-category="dates">التمر</button>
+            <button class="filter-tab" data-category="chocolate">الشوكولاتة</button>
+            <button class="filter-tab" data-category="trays">الصواني</button>
+        </div>
+    </section>
+
+    <!-- ===================================================================================== -->
+    <!-- PRODUCTS GRID -->
+    <!-- ===================================================================================== -->
+    <section class="container" style="margin-top: 2rem;" data-animate>
+        <div class="products-grid" id="productsGrid">
+            <!-- يتم تحميل المنتجات عبر products.js -->
+        </div>
+    </section>
+
+</main>
+
+<!-- ===================================================================================== -->
+<!-- PRODUCT MODAL -->
+<!-- ===================================================================================== -->
+<div class="modal-overlay" id="productModal" aria-hidden="true">
+    <div class="modal-content">
+
+        <button class="modal-close" id="closeModal">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="modal-body" id="modalBody">
+            <!-- يتم تحميل تفاصيل المنتج عبر products.js -->
+        </div>
+
     </div>
+</div>
 
-    <div id="footer-placeholder"></div>
+<div id="footer-placeholder"></div>
 
-    <script src="assets/js/translations.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/products.js"></script>
+<script src="assets/js/translations.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/products.js"></script>
+
 </body>
 </html>
-
