@@ -1,14 +1,34 @@
 <header class="site-header">
     <nav class="nav container">
+
+        <!-- BRAND -->
         <a class="brand" href="index.html">
             <span class="brand-mark">JZ</span>
-            جزيل للضيافة
+            <span class="brand-name">جزيل للضيافة</span>
         </a>
-        <button class="nav-toggle" aria-label="فتح القائمة">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+
+        <!-- ACTION BUTTONS -->
+        <div class="nav-actions">
+
+            <!-- Dark Mode -->
+            <button id="darkToggle" class="action-btn" aria-label="الوضع الليلي">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+
+            <!-- Language -->
+            <button id="languageToggle" class="action-btn lang-btn" aria-label="تغيير اللغة">
+                EN
+            </button>
+
+            <!-- Mobile Menu -->
+            <button class="nav-toggle" aria-label="فتح القائمة">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- NAV LINKS -->
         <ul class="nav-links">
             <li><a href="index.html" data-page="index">الرئيسية</a></li>
             <li><a href="products.html" data-page="products">منتجات جزيل</a></li>
@@ -18,6 +38,6 @@
             <li><a href="links.html" data-page="links">الروابط الرسمية</a></li>
             <li><a href="contact.html" data-page="contact">تواصل معنا</a></li>
         </ul>
+
     </nav>
 </header>
-
