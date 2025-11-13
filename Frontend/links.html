@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="روابط الشركة الرسمية لجزيل - طلب طعام، تواصل، ومتاجر.">
+<meta name="keywords" content="جزيل, شوكولاتة, تمر, ضيافة, بكجات, متجر جزيل, تطبيق جزيل, jazeel">
+<meta name="theme-color" content="#8B5E3C">
+
+<!-- Open Graph -->
+<meta property="og:title" content="روابط جزيل الرسمية">
+<meta property="og:description" content="كل روابط وخدمات جزيل الرسمية في مكان واحد.">
+<meta property="og:image" content="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/jazeel.jpg">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_SA">
+
+<!-- أيقونة المتصفح -->
+<link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/jazeel.jpg">
+
+<title>روابط جزيل الرسمية</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- خطوط -->
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+
+<style>
+:root {
+  --brown-dark: #4B3B2F;
+  --brown: #8B5E3C;
+  --beige: #D9C6A3;
+  --beige-light: #F7F2ED;
+  --text-dark: #3E2C1C;
+  --text-light: #F7F2ED;
+  --transition: all 0.35s ease;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  background: linear-gradient(180deg, var(--beige-light) 0%, #EFE6DA 100%);
+  color: var(--text-dark);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 1s ease both;
+  transition: var(--transition);
+}
+
+body.dark-mode {
+  background: linear-gradient(180deg, var(--brown-dark) 0%, #2B221A 100%);
+  color: var(--text-light);
+}
+
+.top-buttons {
+  position: fixed;
+  top: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  z-index: 1000;
+}
+
+.top-btn {
+  background: var(--brown);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: var(--transition);
+}
+
+.top-btn:hover {
+  background: var(--beige);
+  color: var(--brown-dark);
+  transform: scale(1.1);
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, var(--brown) 0%, var(--brown-dark) 100%);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.scroll-top-btn.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.scroll-top-btn:hover {
+  transform: translateY(-6px);
+}
+
+.links-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 1rem 3rem;
+  min-height: calc(100vh - 120px);
+  box-sizing: border-box;
+}
+
+.jazeel-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  padding: 2rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  backdrop-filter: blur(12px);
+  transition: var(--transition);
+}
+
+body.dark-mode .jazeel-card {
+  background: rgba(75, 59, 47, 0.85);
+}
+
+body.dark-mode .scroll-top-btn {
+  background: linear-gradient(135deg, var(--beige) 0%, var(--brown) 100%);
+  color: var(--brown-dark);
+}
+
+.jazeel-logo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid var(--beige);
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.jazeel-btn {
+  background: linear-gradient(90deg, var(--brown) 0%, var(--brown-dark) 100%);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 0.8rem 1rem;
+  font-weight: 600;
+  width: 100%;
+  margin-bottom: 0.6rem;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: var(--transition);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.jazeel-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  background: linear-gradient(90deg, var(--beige) 0%, var(--brown) 100%);
+  color: var(--brown-dark);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.app-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.jazeel-btn:hover .app-icon {
+  transform: scale(1.2) rotate(-5deg);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.btn-ripple {
+  position: absolute;
+  border-radius: 999px;
+  transform: scale(0);
+  animation: ripple 0.6s linear;
+  background: rgba(255, 255, 255, 0.45);
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(12);
+    opacity: 0;
+  }
+}
+
+/* أيقونات السوشيال */
+.jazeel-social {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  flex-wrap: nowrap;
+  padding-bottom: 5px;
+}
+
+.jazeel-social::-webkit-scrollbar {
+  display: none;
+}
+
+.jazeel-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.jazeel-social a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40%;
+}
+
+.jazeel-social a:hover {
+  transform: scale(1.25);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@media (max-width: 576px) {
+  .app-icon { width: 45px; height: 45px; }
+}
+</style>
+</head>
+<body>
+
+<!-- أزرار الرجوع والمشاركة -->
+<div class="top-buttons">
+  <button id="backBtn" class="top-btn" title="رجوع">
+    <i class="fa-solid fa-arrow-right"></i>
+  </button>
+  <button id="shareBtn" class="top-btn" title="مشاركة الصفحة">
+    <i class="fa-solid fa-share-nodes"></i>
+  </button>
+</div>
+
+<main class="page links-page">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <div class="jazeel-card text-center">
+          <img src="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/jazeel.jpg
+" alt="شعار جزيل" class="jazeel-logo" loading="lazy">
+          <h1>جزيل</h1>
+          <h3>متخصصين في الشوكولاتة والتمر المحشي وبكجات الضيافة بمعايير عالمية</h3>
+          <br><br>
+
+          <!-- أيقونات السوشيال -->
+          <div class="jazeel-social">
+            <a href="https://www.tiktok.com/@jazeel_sa"><img src="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/tiktok.png
+" alt="TikTok" loading="lazy"></a>
+            <a href="https://www.instagram.com/jazeelcomsa"> <img src="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/instagram.png" class="app-icon" loading="lazy" alt="Instagram"></a>
+            <a href="https://youtube.com/@jazeel3573"><img src="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/youtube.png
+" alt="YouTube" loading="lazy"></a>
+            <a href="https://x.com/jazeelcomsa"><img src="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/x.png
+" alt="X" loading="lazy"></a>
+            <a href="https://www.snapchat.com/@jazeelsa"><img src="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/snapchat.png
+" alt="Snapchat" loading="lazy"></a>
+          </div>
+
+          <!-- باقي الروابط -->
+          <h4 class="mb-3">خدمات جزيل</h4>
+         <a href="#" class="jazeel-btn">
+  <span>مواقع الفروع</span>
+  <img src="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/branches.png" 
+       alt="مواقع الفروع" class="app-icon" loading="lazy">
+</a>
+
+          <a href="https://drive.google.com/drive/folders/1TU-FIWbAlJFU8aaeEdNf07IzyN7VZbBX" class="jazeel-btn"><span>بكجات المناسبات</span><img src="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/packages.png
+" class="app-icon" loading="lazy"></a>
+          <a href="https://jazeel.tryorder.net/app" class="jazeel-btn"><span>تطبيق جزيل</span><img src="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/jazeel.jpg" class="app-icon" loading="lazy"></a>
+          <a href="https://jazeel.com.sa/" class="jazeel-btn"><span>صواني جزيل</span><img src="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/soany.png
+" class="app-icon" loading="lazy"></a>
+          <a href="https://jazeel.online/" class="jazeel-btn"><span>متجر القهوة</span><img src="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/coffee.png" class="app-icon" loading="lazy" alt="قهوة">
+</a></a>
+          <a href="https://wa.me/966500865558" class="jazeel-btn"><span>خدمة العملاء</span>  <img src="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/support.png
+" class="app-icon" loading="lazy" alt="Corporate"></a>
+          <a href="https://wa.me/966533993707" class="jazeel-btn"><span>مبيعات الشركات</span><img src="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/corporate.png" class="app-icon" loading="lazy"></a>
+
+          <hr class="my-4">
+
+          <h4 class="mb-3 mt-4">تطبيقات التوصيل</h4>
+          <a href="https://hungerstation.com/sa-ar/restaurant/jazeel/" class="jazeel-btn"><span>هنقرستيشن</span> <img src="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/hungerstation.jpg" class="app-icon" loading="lazy" alt="HungerStation"></a>
+          <a href="https://jahez.link/TyiUaRhl7Kb" class="jazeel-btn"><span>جاهز</span> <img src="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/jahez.png" class="app-icon" loading="lazy" alt="Jahez"></a>
+          <a href="https://thechefzco.app.link/0n4HjnxksJb" class="jazeel-btn"><span>ذا شفز</span><img src="assets/icons/thechefz.png" class="app-icon" loading="lazy"></a>
+          <a href="https://food.noon.com/ar-sa/outlet/JZLS8WGAGJ" class="jazeel-btn"><span>نون فودز</span><img src="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/noonfoods.png
+" class="app-icon" loading="lazy"></a>
+          <a href="https://toyou.io/merchant/5b523bd9-0607-4527-8e39-effc77f7b7d4" class="jazeel-btn"><span>تويو</span><img src="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/toyou.jpg
+" class="app-icon" loading="lazy"></a>
+          <a href="https://mrsool.app.link/shops/4af5bad59642215124d364c57306a607" class="jazeel-btn"><span>مرسول</span><img src="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/mrsool.png
+" class="app-icon" loading="lazy"></a>
+          <a href="https://m.mykeeta.com/marketing/applaunch/index.html?inner_url=sailorc%3A%2F%2Fkeeta.com%2FmarketTransfer%2Fmachpro%3Fmach_bundle_name%3Dmach_pro_sailor_c_shop%26shopId%3D560844%26channel%3Dbd" class="jazeel-btn"><span>كيتا</span><img src="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/keeta.jpg
+" class="app-icon" loading="lazy"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const backBtn = document.getElementById("backBtn");
+  const shareBtn = document.getElementById("shareBtn");
+
+  if (backBtn) {
+    backBtn.addEventListener("click", () => {
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        window.location.href = "index.html";
+      }
+    });
+  }
+
+  if (shareBtn) {
+    shareBtn.addEventListener("click", async () => {
+      const shareData = {
+        title: "روابط جزيل الرسمية",
+        text: "اكتشف كل خدمات وروابط جزيل في مكان واحد!",
+        url: window.location.href
+      };
+
+      if (navigator.share) {
+        try {
+          await navigator.share(shareData);
+        } catch (err) {
+          console.log("لم تتم المشاركة:", err);
+        }
+      } else {
+        alert("انسخ الرابط يدويًا:\n" + window.location.href);
+      }
+    });
+  }
+
+  const scrollTopBtn = document.createElement("button");
+  scrollTopBtn.className = "scroll-top-btn";
+  scrollTopBtn.innerHTML = '<i class="fa-solid fa-arrow-up"></i>';
+  scrollTopBtn.title = "العودة للأعلى";
+  document.body.appendChild(scrollTopBtn);
+
+  const toggleScrollBtn = () => {
+    if (window.scrollY > 400) {
+      scrollTopBtn.classList.add("is-visible");
+    } else {
+      scrollTopBtn.classList.remove("is-visible");
+    }
+  };
+
+  scrollTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  window.addEventListener("scroll", toggleScrollBtn, { passive: true });
+  toggleScrollBtn();
+
+  const rippleTargets = document.querySelectorAll(".jazeel-btn");
+  rippleTargets.forEach((button) => {
+    if (button.dataset.rippleBound === "true") return;
+    button.dataset.rippleBound = "true";
+    button.addEventListener("click", (event) => {
+      const rect = button.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      const ripple = document.createElement("span");
+      ripple.className = "btn-ripple";
+      ripple.style.width = ripple.style.height = `${size}px`;
+      ripple.style.left = `${event.clientX - rect.left - size / 2}px`;
+      ripple.style.top = `${event.clientY - rect.top - size / 2}px`;
+      button.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 600);
+    });
+  });
+});
+</script>
+
+</body>
+</html>

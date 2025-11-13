@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حلول B2B | جزيل للشركات والفنادق</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-2f1LzFQZVTNff7kwh28ykVfoCEN0z7LxyzKDn5XxhxL7sRKqGZo4PMBVXsfS5aXoaZySUdkddUTkOcNEPwZV2Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/jazeel.jpg">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="page">
+        <section class="hero" data-animate>
+            <div class="container">
+                <div class="hero-copy">
+                    <h1>حلول ضيافة للشركات والفنادق</h1>
+                    <p>نقدّم حزم ضيافة مصممة خصيصاً للمؤسسات التي تسعى لتقديم تجربة ترحيبية متميزة لضيوفها وعملائها.</p>
+                    <div class="cta-group">
+                        <a class="btn btn-primary" href="#request">نموذج طلب عرض</a>
+                        <a class="btn btn-tertiary" href="contact.html">تواصل مباشر</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=660&q=80" alt="حلول الضيافة للشركات">
+                </div>
+            </div>
+        </section>
+
+        <section class="container" data-animate>
+            <div class="section-heading">
+                <span>لماذا جزيل؟</span>
+                <h2>شراكة تضيف قيمة لعلامتك التجارية</h2>
+            </div>
+            <div class="cards-grid">
+                <article class="card" data-animate>
+                    <span class="tag">تخصيص الهوية</span>
+                    <h3>مواءمة كاملة مع علامتك</h3>
+                    <p>تخصيص التغليف، الألوان، والمواد التعريفية لتتوافق مع هوية شركتك أو فندقك.</p>
+                </article>
+                <article class="card" data-animate>
+                    <span class="tag">خدمة مستمرة</span>
+                    <h3>إدارة حساب مخصص</h3>
+                    <p>مدير حساب يتابع احتياجاتك، ينسق الطلبات الدورية، ويضمن جودة الخدمة.</p>
+                </article>
+                <article class="card" data-animate>
+                    <span class="tag">مرونة</span>
+                    <h3>خيارات تسعير متنوعة</h3>
+                    <p>خطط تعاقد مرنة تشمل عقود موسمية، سنوية، أو طلبات حسب الحدث.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="container" style="margin-top: 3rem;" id="request" data-animate>
+            <div class="section-heading">
+                <span>نموذج طلب عرض</span>
+                <h2>سجّل احتياجك لنعد عرضاً مخصصاً</h2>
+            </div>
+            <div class="contact-card">
+                <form>
+                    <div class="field">
+                        <label for="company-name">اسم الشركة / الفندق</label>
+                        <input id="company-name" type="text" placeholder="مثال: فندق الواحة" required>
+                    </div>
+                    <div class="field">
+                        <label for="contact-person">اسم الشخص المسؤول</label>
+                        <input id="contact-person" type="text" placeholder="الاسم الكامل" required>
+                    </div>
+                    <div class="field">
+                        <label for="contact-email">البريد الإلكتروني</label>
+                        <input id="contact-email" type="email" placeholder="example@jazil.sa" required>
+                    </div>
+                    <div class="field">
+                        <label for="solution-type">نوع الحل المطلوب</label>
+                        <select id="solution-type" required>
+                            <option value="">اختر الخيار الأنسب</option>
+                            <option value="hospitality">ضيافة غرف النزلاء</option>
+                            <option value="events">فعاليات ومؤتمرات</option>
+                            <option value="corporate-gifts">هدايا الشركات</option>
+                            <option value="custom">حلول مخصصة أخرى</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="details">تفاصيل إضافية</label>
+                        <textarea id="details" rows="4" placeholder="عدد الضيوف، مواعيد التوريد، ملاحظات خاصة"></textarea>
+                    </div>
+                    <button class="btn btn-primary" type="submit">إرسال الطلب</button>
+                </form>
+                <p style="color: var(--text-light); margin: 0;">
+                    *يتم مشاركة الطلب عبر البريد للتنسيق المباشر خلال يوم عمل واحد.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="assets/js/translations.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
