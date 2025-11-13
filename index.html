@@ -1,302 +1,397 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>جزيل | الضيافة الفاخرة والمنتجات السعودية الأصلية</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-2f1LzFQZVTNff7kwh28ykVfoCEN0z7LxyzKDn5XxhxL7sRKqGZo4PMBVXsfS5aXoaZySUdkddUTkOcNEPwZV2Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
-	<link rel="icon" type="image/jpeg" href="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/jazeel.jpg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg"
+          href="https://raw.githubusercontent.com/MohammedAliezamabdu/icons/56955cad967cf746645313766e5482f9604a8ff9/jazeel.jpg">
+
+    <!-- Main Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <div id="header-placeholder"></div>
 
-    <main class="page">
-		<section class="hero" data-animate>
-            <div class="container">
-                <div class="hero-copy">
-                    <h1 data-translate="home.heroTitle">ضيافة سعودية أصيلة بطابع فاخر</h1>
-                    <p data-translate="home.heroSubtitle">جزيل تقدّم تجربة ضيافة متكاملة تعكس جودتنا في تقديم التمور المختارة، الشوكولاتة الفاخرة، والصواني المصممة للمناسبات الخاصة.</p>
-                    <div class="cta-group">
-                        <a class="btn btn-primary" href="products.html">
-                            <i class="fa-solid fa-seedling"></i>
-                            <span data-translate="home.exploreProducts">استكشف المنتجات</span>
-                        </a>
-                        <a class="btn btn-tertiary" href="packages.html">
-                            <i class="fa-solid fa-gift"></i>
-                            <span data-translate="home.viewPackages">اطّلع على البكجات</span>
-                        </a>
-                        <button class="btn btn-glass hero-video-trigger" type="button" data-video="https://www.youtube.com/embed/ElN7S6y4C1Y" aria-haspopup="dialog" aria-controls="heroVideoModal">
-                            <i class="fa-solid fa-play"></i>
-                            <span data-translate="home.heroWatchStory">شاهد القصة</span>
-                        </button>
-                    </div>
-                    <div class="hero-status">
-                        <span class="hero-status-badge" data-translate="home.heroBadge">مستعدون لخدمتكم في 24 ساعة</span>
-                        <span class="hero-status-note" data-translate="home.heroNote">خبرة ضيافة تمتد إلى شركاء في الخليج والعالم</span>
-                    </div>
-                </div>
-                <div class="hero-media">
-                    <div class="hero-media-overlay"></div>
-                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80" alt="ضيافة جزيل">
-					<button class="hero-media-trigger hero-video-trigger" type="button" data-video="https://www.youtube.com/embed/ElN7S6y4C1Y" aria-haspopup="dialog" aria-controls="heroVideoModal" data-translate-aria="home.heroWatchStory">
-						<span class="trigger-icon">
-							<i class="fa-solid fa-play"></i>
-						</span>
-					</button>
-                    <div class="hero-media-facts">
-                        <div class="media-fact">
-                            <span class="fact-number">50+</span>
-                            <span class="fact-label" data-translate="home.heroFactClients">شركاء ضيافة دوليين</span>
-                        </div>
-                        <div class="media-fact">
-                            <span class="fact-number">18</span>
-                            <span class="fact-label" data-translate="home.heroFactCities">مدينة نخدمها حول العالم</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<div id="header-placeholder"></div>
 
-        <section class="global-presence" data-animate>
-            <div class="container">
-                <div class="section-heading">
-                    <span data-translate="home.trustTitle">شركاء موثوقون حول العالم</span>
-                    <h2 data-translate="home.trustSubtitle">نخدم العلامات الفاخرة في الضيافة والسفر</h2>
-                </div>
-                <div class="partner-marquee" aria-label="Global partners">
-                    <div class="marquee-track">
-                        <span>Four Seasons Hotels</span>
-                        <span>Saudi Airlines Catering</span>
-                        <span>Mandarin Oriental</span>
-                        <span>Qatar Airways Premium</span>
-                        <span>Hilton Luxury Brands</span>
-                        <span>Marriott Bonvoy Elite</span>
-                        <span>Accor Live Limitless</span>
-                        <span>Emirates First Class</span>
-                    </div>
-                    <div class="marquee-track" aria-hidden="true">
-                        <span>Four Seasons Hotels</span>
-                        <span>Saudi Airlines Catering</span>
-                        <span>Mandarin Oriental</span>
-                        <span>Qatar Airways Premium</span>
-                        <span>Hilton Luxury Brands</span>
-                        <span>Marriott Bonvoy Elite</span>
-                        <span>Accor Live Limitless</span>
-                        <span>Emirates First Class</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+<main class="page">
 
-		<section class="container" data-animate>
-            <div class="section-heading">
-                <span data-translate="home.sectionsTitle">أقسام ضيافة جزيل</span>
-                <h2 data-translate="home.sectionsSubtitle">منتجات متكاملة لكل لحظة ضيافة</h2>
-            </div>
-            <div class="feature-grid">
-				<article class="feature-card" data-animate>
-                    <div class="feature-icon">
-                        <i class="fa-solid fa-mug-hot"></i>
-                    </div>
-                    <h3 data-translate="home.hospitalityTitle">ضيافة المناسبات</h3>
-                    <p data-translate="home.hospitalityDesc">تجهيز صواني الضيافة الفاخرة مع التمر، المكسرات، والشكولاتة لتشكّل تجربة متكاملة لضيوفك.</p>
-                    <a class="btn btn-secondary" href="packages.html" data-translate="home.viewPackagesBtn">عرض البكجات</a>
-                </article>
-				<article class="feature-card" data-animate>
-                    <div class="feature-icon">
-                        <i class="fa-solid fa-box-open"></i>
-                    </div>
-                    <h3 data-translate="home.productsTitle">منتجات مختارة</h3>
-                    <p data-translate="home.productsDesc">مجموعة متنوعة من التمور السعودية الفاخرة والشوكولاتة والحلويات المصاحبة بجودة عالية.</p>
-                    <a class="btn btn-tertiary" href="products.html" data-translate="home.discoverProducts">اكتشف المنتجات</a>
-                </article>
-				<article class="feature-card" data-animate>
-                    <div class="feature-icon">
-                        <i class="fa-solid fa-building"></i>
-                    </div>
-                    <h3 data-translate="home.b2bTitle">حلول قطاع الأعمال</h3>
-                    <p data-translate="home.b2bDesc">خدمات مخصصة للفنادق والشركات لتقديم ضيافة راقية تعكس هوية العلامة التجارية.</p>
-                    <a class="btn btn-tertiary" href="b2b.html" data-translate="home.learnSolutions">تعرف على الحلول</a>
-                </article>
-            </div>
-        </section>
+    <!-- ===================================================================================== -->
+    <!-- HERO SECTION -->
+    <!-- ===================================================================================== -->
+    <section class="hero" data-animate>
+        <div class="container">
 
-        <section class="experience-stories" data-animate>
-            <div class="container">
-                <div class="section-heading">
-                    <span data-translate="home.testimonialsTitle">قصص ثقة متبادلة</span>
-                    <h2 data-translate="home.testimonialsSubtitle">نرتقي بتجارب ضيافة ضيوفكم في كل مناسبة</h2>
-                </div>
-                <div class="testimonials-slider" role="region" aria-roledescription="carousel" aria-live="polite">
-                    <button class="slider-control prev" data-translate-aria="home.testimonialPrev" aria-label="الشهادة السابقة" data-translate-title="home.testimonialPrev">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                    <div class="slider-window">
-                        <div class="slider-track">
-                            <article class="testimonial-card" data-index="0">
-                                <div class="testimonial-rating" aria-label="5 من 5">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <p data-translate="home.testimonialQuote1">"جزيل رفعت معايير الضيافة في مناسباتنا الدولية. التفاصيل المتقنة والتغليف الراقي أبهرت ضيوفنا."</p>
-                                <div class="testimonial-meta">
-                                    <span class="name" data-translate="home.testimonialName1">مديرة تجربة الضيوف - فندق فاخر في الرياض</span>
-                                    <span class="location" data-translate="home.testimonialLocation1">الرياض، السعودية</span>
-                                </div>
-                            </article>
-                            <article class="testimonial-card" data-index="1">
-                                <div class="testimonial-rating" aria-label="5 of 5">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <p data-translate="home.testimonialQuote2">"خدمة سلسة وشراكة موثوقة. جزيل تفهم متطلبات النخبة وتقدم حلولاً فورية في كل مدينة نعمل بها."</p>
-                                <div class="testimonial-meta">
-                                    <span class="name" data-translate="home.testimonialName2">مدير أول - شركة ضيافة طيران خليجية</span>
-                                    <span class="location" data-translate="home.testimonialLocation2">الدوحة، قطر</span>
-                                </div>
-                            </article>
-                            <article class="testimonial-card" data-index="2">
-                                <div class="testimonial-rating" aria-label="5 of 5">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </div>
-                                <p data-translate="home.testimonialQuote3">"الضيافة التي تقدمها جزيل تحفظ تراثنا وتضيف لمسة عالمية. نوصي بها لشركائنا في المناسبات الفاخرة."</p>
-                                <div class="testimonial-meta">
-                                    <span class="name" data-translate="home.testimonialName3">رئيس قسم المراسم - جهة حكومية</span>
-                                    <span class="location" data-translate="home.testimonialLocation3">دبي، الإمارات</span>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                    <button class="slider-control next" data-translate-aria="home.testimonialNext" aria-label="الشهادة التالية" data-translate-title="home.testimonialNext">
-                        <i class="fa-solid fa-arrow-left"></i>
+            <div class="hero-copy">
+                <h1>ضيافة سعودية أصيلة بطابع فاخر</h1>
+                <p>
+                    تقدّم <strong>جزيل</strong> تجربة ضيافة متكاملة تشمل التمور الفاخرة، الشوكولاتة المختارة، والصواني المصممة للمناسبات الخاصة والفنادق والشركات.
+                </p>
+
+                <div class="cta-group">
+                    <a class="btn btn-primary" href="products.html">
+                        <i class="fa-solid fa-seedling"></i>
+                        <span>استكشف المنتجات</span>
+                    </a>
+
+                    <a class="btn btn-tertiary" href="packages.html">
+                        <i class="fa-solid fa-gift"></i>
+                        <span>اطّلع على البكجات</span>
+                    </a>
+
+                    <button class="btn btn-glass hero-video-trigger"
+                            type="button"
+                            data-video="https://www.youtube.com/embed/ElN7S6y4C1Y">
+                        <i class="fa-solid fa-play"></i>
+                        <span>شاهد القصة</span>
                     </button>
                 </div>
-                <div class="slider-dots" role="tablist" aria-label="Testimonials navigation"></div>
-            </div>
-        </section>
 
-        <section class="impact-metrics" data-animate>
-            <div class="container metrics-grid">
-                <article class="metric-card">
-                    <span class="metric-icon">
-                        <i class="fa-solid fa-earth-americas"></i>
-                    </span>
-                    <span class="metric-value" data-metric="28">0</span>
-                    <span class="metric-label" data-translate="home.metricCountries">دولة تصلها حلول الضيافة لدينا</span>
-                </article>
-                <article class="metric-card">
-                    <span class="metric-icon">
-                        <i class="fa-solid fa-champagne-glasses"></i>
-                    </span>
-                    <span class="metric-value" data-metric="940" data-suffix="+">0</span>
-                    <span class="metric-label" data-translate="home.metricEvents">مناسبة نخدمها كل عام للنخبة</span>
-                </article>
-                <article class="metric-card">
-                    <span class="metric-icon">
-                        <i class="fa-solid fa-face-smile-stars"></i>
-                    </span>
-                    <span class="metric-value" data-metric="98" data-suffix="%">0</span>
-                    <span class="metric-label" data-translate="home.metricSatisfaction">نسبة رضا العملاء في استطلاعات 2025</span>
-                </article>
-                <article class="metric-card">
-                    <span class="metric-icon">
-                        <i class="fa-solid fa-ship"></i>
-                    </span>
-                    <span class="metric-value" data-metric="72" data-suffix="+">0</span>
-                    <span class="metric-label" data-translate="home.metricLogistics">خط شحن مبرد لتسليم الضيافة عالمياً</span>
-                </article>
+                <div class="hero-status">
+                    <span class="hero-status-badge">جاهزون لخدمتكم خلال 24 ساعة</span>
+                    <span class="hero-status-note">شركاؤنا من الفنادق والشركات في الخليج والعالم</span>
+                </div>
             </div>
-        </section>
 
-		<section class="container" style="margin-top: 3rem;" data-animate>
-            <div class="section-heading">
-                <span data-translate="home.commitmentTitle">التزامنا</span>
-                <h2 data-translate="home.commitmentSubtitle">هوية سعودية، جودة عالمية</h2>
-            </div>
-            <div class="cards-grid">
-				<article class="card" data-animate>
-                    <span class="tag" data-translate="home.qualityTag">جودة</span>
-                    <h3 data-translate="home.qualityTitle">اختيار دقيق لمصادرنا</h3>
-                    <p data-translate="home.qualityDesc">نعتمد على مورّدين معتمدين محلياً لضمان جودة التمور والمنتجات المواكبة لذائقة الضيافة السعودية.</p>
-                </article>
-				<article class="card" data-animate>
-                    <span class="tag" data-translate="home.designTag">تصميم</span>
-                    <h3 data-translate="home.designTitle">تقديم يعكس الفخامة</h3>
-                    <p data-translate="home.designDesc">كل منتج يغلف بعناية وبألوان متناسقة تعبّر عن هوية جزيل وتنسجم مع مناسبات العملاء.</p>
-                </article>
-				<article class="card" data-animate>
-                    <span class="tag" data-translate="home.serviceTag">خدمة</span>
-                    <h3 data-translate="home.serviceTitle">جاهزية للطلب</h3>
-                    <p data-translate="home.serviceDesc">فريق متخصص يتابع الطلبات ويضمن وصولها في الوقت المحدد مع تقديم حلول مخصصة لكل احتياج.</p>
-                </article>
-            </div>
-        </section>
+            <div class="hero-media">
+                <div class="hero-media-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80"
+                     alt="ضيافة جزيل">
 
-        <section class="newsletter-invite" data-animate>
-            <div class="container">
-                <div class="newsletter-content">
-                    <div class="section-heading">
-                        <span data-translate="home.newsletterTitle">ابق على اطلاع</span>
-                        <h2 data-translate="home.newsletterSubtitle">تحديثات موسمية، أحدث الصواني، وعروض شركاء الضيافة</h2>
+                <button class="hero-media-trigger hero-video-trigger"
+                        type="button"
+                        data-video="https://www.youtube.com/embed/ElN7S6y4C1Y">
+                    <span class="trigger-icon"><i class="fa-solid fa-play"></i></span>
+                </button>
+
+                <div class="hero-media-facts">
+                    <div class="media-fact">
+                        <span class="fact-number">50+</span>
+                        <span class="fact-label">شركاء ضيافة دوليون</span>
                     </div>
-                    <p class="newsletter-copy" data-translate="home.newsletterCopy">انضم إلى قائمتنا البريدية لتصلك عروض حصرية، ونصائح لتجربة ضيافة تلائم معايير الضيوف العالميين.</p>
-                    <form class="newsletter-form">
-                        <div class="field">
-                            <label for="newsletter-email" data-translate="home.newsletterLabel">البريد الإلكتروني</label>
-                            <input id="newsletter-email" type="email" name="email" placeholder="you@example.com" required data-translate="home.newsletterPlaceholder">
-                        </div>
-                        <button type="submit" class="btn btn-primary" data-translate="home.newsletterCta">انضم الآن</button>
-                    </form>
-                    <div class="newsletter-links">
-                        <a href="https://wa.me/966500000000" target="_blank" rel="noopener" class="social-link">
-                            <i class="fa-brands fa-whatsapp"></i>
-                            <span data-translate="home.newsletterWhatsApp">دردشة مع فريق الضيافة</span>
-                        </a>
-                        <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="social-link">
-                            <i class="fa-brands fa-linkedin"></i>
-                            <span data-translate="home.newsletterLinkedIn">تابع قصص النجاح على لينكدإن</span>
-                        </a>
-                        <a href="https://www.instagram.com" target="_blank" rel="noopener" class="social-link">
-                            <i class="fa-brands fa-instagram"></i>
-                            <span data-translate="home.newsletterInstagram">شاهد تغطيات المناسبات العالمية</span>
-                        </a>
+                    <div class="media-fact">
+                        <span class="fact-number">18</span>
+                        <span class="fact-label">مدينة نخدمها حول العالم</span>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
 
-    <div id="footer-placeholder"></div>
+        </div>
+    </section>
 
-    <div class="modal-overlay hero-video-modal" id="heroVideoModal" role="dialog" aria-modal="true" aria-hidden="true">
-        <div class="modal-content">
-            <button class="modal-close" type="button" aria-label="إغلاق الفيديو" data-translate-aria="home.heroVideoClose" data-translate-title="home.heroVideoClose">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <div class="modal-body">
-                <div class="responsive-video">
-                    <iframe id="heroVideoFrame" src="" title="Jazil Hospitality Story" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <!-- ===================================================================================== -->
+    <!-- GLOBAL PRESENCE -->
+    <!-- ===================================================================================== -->
+    <section class="global-presence" data-animate>
+        <div class="container">
+            <div class="section-heading">
+                <span>شركاء موثوقون حول العالم</span>
+                <h2>نخدم العلامات الفاخرة في الضيافة والسفر</h2>
+            </div>
+
+            <div class="partner-marquee">
+                <div class="marquee-track">
+                    <span>Four Seasons Hotels</span>
+                    <span>Saudi Airlines Catering</span>
+                    <span>Mandarin Oriental</span>
+                    <span>Qatar Airways Premium</span>
+                    <span>Hilton Luxury Brands</span>
+                    <span>Marriott Bonvoy Elite</span>
+                    <span>Accor Live Limitless</span>
+                    <span>Emirates First Class</span>
+                </div>
+
+                <div class="marquee-track" aria-hidden="true">
+                    <span>Four Seasons Hotels</span>
+                    <span>Saudi Airlines Catering</span>
+                    <span>Mandarin Oriental</span>
+                    <span>Qatar Airways Premium</span>
+                    <span>Hilton Luxury Brands</span>
+                    <span>Marriott Bonvoy Elite</span>
+                    <span>Accor Live Limitless</span>
+                    <span>Emirates First Class</span>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <script src="assets/js/translations.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- ===================================================================================== -->
+    <!-- OUR SECTIONS -->
+    <!-- ===================================================================================== -->
+    <section class="container" data-animate>
+        <div class="section-heading">
+            <span>أقسام ضيافة جزيل</span>
+            <h2>منتجات متكاملة لكل لحظة ضيافة</h2>
+        </div>
+
+        <div class="feature-grid">
+
+            <article class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                <h3>ضيافة المناسبات</h3>
+                <p>
+                    صواني ضيافة متكاملة تضم التمور المختارة، المكسرات، والشوكولاتة لتقديم تجربة راقية لضيوفك.
+                </p>
+                <a class="btn btn-secondary" href="packages.html">عرض البكجات</a>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-box-open"></i></div>
+                <h3>منتجات مختارة</h3>
+                <p>
+                    مجموعة فاخرة من التمور السعودية والشوكولاتة والحلويات المصاحبة بجودة عالية.
+                </p>
+                <a class="btn btn-tertiary" href="products.html">اكتشف المنتجات</a>
+            </article>
+
+            <article class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-building"></i></div>
+                <h3>حلول قطاع الأعمال</h3>
+                <p>
+                    ضيافة مخصصة للفنادق والشركات بما يتناسب مع هويتها واحتياجات ضيوفها.
+                </p>
+                <a class="btn btn-tertiary" href="b2b.html">تعرف على الحلول</a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ===================================================================================== -->
+    <!-- TESTIMONIALS -->
+    <!-- ===================================================================================== -->
+    <section class="experience-stories" data-animate>
+        <div class="container">
+
+            <div class="section-heading">
+                <span>قصص ثقة متبادلة</span>
+                <h2>نرتقي بتجارب ضيافة ضيوفكم في كل مناسبة</h2>
+            </div>
+
+            <div class="testimonials-slider" role="region">
+                <button class="slider-control prev"><i class="fa-solid fa-arrow-right"></i></button>
+
+                <div class="slider-window">
+                    <div class="slider-track">
+
+                        <article class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>
+                                "جزيل رفعت معايير الضيافة في مناسباتنا الدولية. التفاصيل المتقنة والتغليف الراقي أبهرت ضيوفنا."
+                            </p>
+                            <div class="testimonial-meta">
+                                <span class="name">مديرة تجربة الضيوف – فندق فاخر</span>
+                                <span class="location">الرياض</span>
+                            </div>
+                        </article>
+
+                        <article class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>
+                                "خدمة سلسة وشراكة موثوقة. جزيل تفهم احتياجات قطاع السفر وتوفر حلولاً سريعة وفاخرة."
+                            </p>
+                            <div class="testimonial-meta">
+                                <span class="name">مدير ضيافة – شركة طيران خليجية</span>
+                                <span class="location">الدوحة</span>
+                            </div>
+                        </article>
+
+                        <article class="testimonial-card">
+                            <div class="testimonial-rating">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>
+                                "الضيافة التي تقدمها جزيل تحفظ هويتنا وتضيف لمسة عالمية. نوصي بها لجميع المناسبات الرسمية."
+                            </p>
+                            <div class="testimonial-meta">
+                                <span class="name">رئيس قسم المراسم – جهة حكومية</span>
+                                <span class="location">دبي</span>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <button class="slider-control next"><i class="fa-solid fa-arrow-left"></i></button>
+            </div>
+
+            <div class="slider-dots"></div>
+
+        </div>
+    </section>
+
+    <!-- ===================================================================================== -->
+    <!-- METRICS -->
+    <!-- ===================================================================================== -->
+    <section class="impact-metrics" data-animate>
+        <div class="container metrics-grid">
+
+            <article class="metric-card">
+                <span class="metric-icon"><i class="fa-solid fa-earth-americas"></i></span>
+                <span class="metric-value" data-metric="28">0</span>
+                <span class="metric-label">دولة تصلها حلول الضيافة لدينا</span>
+            </article>
+
+            <article class="metric-card">
+                <span class="metric-icon"><i class="fa-solid fa-champagne-glasses"></i></span>
+                <span class="metric-value" data-metric="940" data-suffix="+">0</span>
+                <span class="metric-label">مناسبة نخدمها سنوياً للنخبة</span>
+            </article>
+
+            <article class="metric-card">
+                <span class="metric-icon"><i class="fa-solid fa-face-smile-stars"></i></span>
+                <span class="metric-value" data-metric="98" data-suffix="%">0</span>
+                <span class="metric-label">نسبة رضا العملاء</span>
+            </article>
+
+            <article class="metric-card">
+                <span class="metric-icon"><i class="fa-solid fa-ship"></i></span>
+                <span class="metric-value" data-metric="72" data-suffix="+">0</span>
+                <span class="metric-label">خط شحن مبرد حول العالم</span>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ===================================================================================== -->
+    <!-- COMMITMENT -->
+    <!-- ===================================================================================== -->
+    <section class="container" style="margin-top: 3rem;" data-animate>
+
+        <div class="section-heading">
+            <span>التزامنا</span>
+            <h2>هوية سعودية، جودة عالمية</h2>
+        </div>
+
+        <div class="cards-grid">
+
+            <article class="card">
+                <span class="tag">جودة</span>
+                <h3>اختيار دقيق للمصادر</h3>
+                <p>
+                    نعمل مع موردين معتمدين لضمان أعلى جودة للتمور والشوكولاتة وتطابقها مع معايير الضيافة.
+                </p>
+            </article>
+
+            <article class="card">
+                <span class="tag">تصميم</span>
+                <h3>تقديم يعكس الفخامة</h3>
+                <p>
+                    كل منتج يمر بمراحل تصميم وتغليف مدروسة لتعكس هوية جزيل وتنسجم مع مناسبات الضيوف.
+                </p>
+            </article>
+
+            <article class="card">
+                <span class="tag">خدمة</span>
+                <h3>جاهزية للطلب</h3>
+                <p>
+                    فريق متخصص يضمن تجهيز وتسليم الطلبات بمرونة وسرعة وفق احتياجات العملاء.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- ===================================================================================== -->
+    <!-- NEWSLETTER -->
+    <!-- ===================================================================================== -->
+    <section class="newsletter-invite" data-animate>
+        <div class="container">
+
+            <div class="newsletter-content">
+
+                <div class="section-heading">
+                    <span>ابق على اطلاع</span>
+                    <h2>أحدث العروض، منتجات الموسم، وضيافة شركائنا</h2>
+                </div>
+
+                <p class="newsletter-copy">
+                    انضم إلى قائمتنا البريدية لتصلك تحديثات موسمية وعروض حصرية ونصائح للضيافة الفاخرة.
+                </p>
+
+                <form class="newsletter-form">
+                    <div class="field">
+                        <label for="newsletter-email">البريد الإلكتروني</label>
+                        <input id="newsletter-email"
+                               type="email"
+                               name="email"
+                               placeholder="you@example.com"
+                               required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">انضم الآن</button>
+                </form>
+
+                <div class="newsletter-links">
+                    <a href="https://wa.me/966500000000" class="social-link" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>تواصل عبر واتساب</span>
+                    </a>
+
+                    <a href="https://www.linkedin.com" class="social-link" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>تابعنا على LinkedIn</span>
+                    </a>
+
+                    <a href="https://www.instagram.com" class="social-link" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>شاهد تغطيات المناسبات</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<div id="footer-placeholder"></div>
+
+<!-- Video Modal -->
+<div class="modal-overlay hero-video-modal" id="heroVideoModal" aria-hidden="true">
+    <div class="modal-content">
+        <button class="modal-close" type="button">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-body">
+            <div class="responsive-video">
+                <iframe id="heroVideoFrame"
+                        src=""
+                        title="Jazil Hospitality Story"
+                        frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/translations.js"></script>
+<script src="assets/js/main.js"></script>
+
 </body>
 </html>
-
