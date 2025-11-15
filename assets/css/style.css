@@ -1579,3 +1579,39 @@ body.dark-mode .scroll-top-btn {
     }
 }
 
+/* ===== BRAND LOGO ===== */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    text-decoration: none;
+}
+
+.brand-logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;        /* يجعل اللوغو دائري */
+    object-fit: cover;
+    background: #fff;
+    padding: 3px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.12);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.brand:hover .brand-logo {
+    transform: scale(1.06);
+    box-shadow: 0 0 8px rgba(0,0,0,0.18);
+}
+
+.brand-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* عند الوضع الليلي */
+body.dark-mode .brand-logo {
+    background: #222;
+    box-shadow: 0 0 4px rgba(255,255,255,0.1);
+}
+
